@@ -58,6 +58,14 @@ sudo apt-get install -y nodejs
 sudo apt-get install mariadb-server
 ```
 
+#### - configure mariadb user
+```
+CREATE USER [username] IDENTIFIED BY '[password]';
+GRANT ALL ON *.* TO '[username]'@'%'; // never grant all for application users
+UPDATE mysql.user SET plugin = 'unix_socket'; // dont do for application users
+FLUSH PRIVILIGES;
+```
+
 
 
 
