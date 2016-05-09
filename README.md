@@ -50,7 +50,9 @@ vim /etc/ssh/sshd_config
 ```sh
 wget -O .vimrc https://raw.githubusercontent.com/FrankPetrilli/PersonalProjects/master/other/vim/vimrc
 
-apt-get update -y
+sudo apt-get update        # Fetches the list of available updates
+sudo apt-get upgrade       # Strictly upgrades the current packages
+sudo apt-get dist-upgrade  # Installs updates (new ones)
 
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
