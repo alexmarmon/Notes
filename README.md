@@ -9,6 +9,16 @@ insert into customers (first_name, last_name, model_ordered, email, phone) value
 ```
 
 ## setting up linux devbox
+
+#### - on Vultr
+```sh
+cat .ssh/id_rsa.pub
+vim .ssh/config
+  Host dev
+  Hostname [vultr ip]
+  User [username]
+ssh root@[vultr ip]
+```
 #### - create non root user, add user to sudoers group
 
 #### - no password sudo
