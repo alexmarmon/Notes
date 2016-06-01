@@ -68,6 +68,17 @@ UPDATE mysql.user SET plugin = 'unix_socket';         # dont do for application 
 FLUSH PRIVILIGES;
 ```
 
+#### - configure letsencrypt cert
+```
+./certbot-auto certonly
+vim /etc/haproxy/haproxy.cfg 
+  frontend ssl
+    bind *:443 ssl crt /etc/haproxy/all.pem ssl crt /etc/haproxy/alexmarmon-all.pem ssl crt /etc/haproxy/{domainName-all}.pem
+sudo su -c "cat /etc/letsencrypt/live/{domainName}/fullchain.pem /etc/letsencrypt/live/{domainName}/privkey.pem > /etc/haproxy/{domainName-all}.pem" 
+sudo service haproxy reload
+```
+
+
 
 
 
