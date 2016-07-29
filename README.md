@@ -87,6 +87,11 @@ sudo vim /etc/haproxy/haproxy.cf
 sudo service haproxy start
 ```
 
+#### - pm2
+```
+sudo npm install pm2 -g
+pm2 start [filename] --name="[applicationname]"
+```
 
 
 
