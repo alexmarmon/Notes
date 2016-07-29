@@ -79,6 +79,15 @@ sudo service haproxy reload
 ```
 
 
+#### - configure haproxy
+```
+sudo apt-get install haproxy
+sudo vim /etc/haproxy/haproxy.cf
+  copy and paste haproxy_starter
+sudo service haproxy start
+```
+
+
 
 
 
