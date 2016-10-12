@@ -93,6 +93,11 @@ sudo npm install pm2 -g
 pm2 start [filename] --name="[applicationname]"
 ```
 
-
+#### - MySQL Dump & Create
+```
+mysqldump -u [user] -p [database] > [name].sql
+//create newDatabase in mysql
+mysql -u [user] -p [newDatabase] < /Path/to/[name].sql
+```
 
 
