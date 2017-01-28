@@ -100,4 +100,10 @@ mysqldump -u [user] -p [database] > [name].sql
 mysql -u [user] -p [newDatabase] < /Path/to/[name].sql
 ```
 
+#### - Transfer file over ssh
+```
+scp user@server:/path/to/file /path/to/dest
+
+realink -f filename.sql // gets full path to file
+```
 
