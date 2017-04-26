@@ -107,3 +107,8 @@ scp user@server:/path/to/file /path/to/dest
 realink -f filename.sql // gets full path to file
 ```
 
+#### - Fix git editor error
+```
+git config --global core.editor $(which vim)
+```
+
