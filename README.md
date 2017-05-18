@@ -104,7 +104,7 @@ mysql -u [user] -p [newDatabase] < /Path/to/[name].sql
 ```
 scp user@server:/path/to/file /path/to/dest
 
-realink -f filename.sql // gets full path to file
+readlink -f filename.sql // gets full path to file
 ```
 
 #### - Fix git editor error
