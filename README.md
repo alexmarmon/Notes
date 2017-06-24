@@ -21,6 +21,9 @@ ssh root@[vultr ip]
 ```
 #### - create non root user, add user to sudoers group
 ```sh
+// if ubuntu doesnt allow ssh as root do:
+sudo cp /home/ubuntu/.ssh/authorized_keys /root/.ssh/
+
 adduser [username]
 sudo adduser alexmarmon sudo
 ```
