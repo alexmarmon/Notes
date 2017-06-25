@@ -71,6 +71,11 @@ UPDATE mysql.user SET plugin = 'unix_socket';         # dont do for application 
 FLUSH PRIVILIGES;
 ```
 
+#### - forward port 80 
+```
+iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port [newport]
+```
+
 #### - configure letsencrypt cert
 ```
 ./certbot-auto certonly
