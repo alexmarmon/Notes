@@ -122,6 +122,7 @@ git config --global core.editor $(which vim)
 
 #### - Fire up mitmproxy
 ```
+add ~/.mitmproxy-ca-cert.pem? to keychain access and trust all
 sudo pfctl -e
 sudo -u nobody mitmweb --mode transparent --showhost
 ```
