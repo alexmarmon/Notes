@@ -120,3 +120,9 @@ readlink -f filename.sql // gets full path to file
 git config --global core.editor $(which vim)
 ```
 
+#### - Fire up mitmproxy
+```
+sudo pfctl -e
+sudo -u nobody mitmweb --mode transparent --showhost
+```
+
